@@ -14,7 +14,7 @@ export const UI = () => {
                     return  <InputSection key={key} name={key} data={value}/>
                 })
             }
-            <Typography align="center" variant="h4">Behaviuors</Typography>
+            <Typography align="center" variant="h4">Behaviours</Typography>
             {
                 Object.entries(uiConfig.behaviours).map(([key, value])=>{
                     return <BehaviourSection key={key} name={key} data={value}/>

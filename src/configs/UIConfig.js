@@ -108,112 +108,117 @@ export const uiConfig = {
             ],
         },
 
-        // speed: {
-        //     children: [
-        //         {
-        //             additable: true,
-        //             children: [
-        //                 {
-        //                     id: 'time',
-        //                     element: 'input',
-        //                     type: 'number',
-        //                     defaultValue: 0,
-        //                 },
+        speed: {
+            children: [
+                {
+                    additable: true,
+                    children: [
+                        {
+                            label: 'time',
+                            element: 'input',
+                            type: 'number',
+                            defaultValue: 0,
+                        },
 
-        //                 {
-        //                     id: 'value',
-        //                     element: 'input',
-        //                     type: 'number',
-        //                     defaultValue: 1,
-        //                 },
-        //             ],
-        //         },
-        //         {
-        //             label: 'minMult',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 1,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //     ],
-        // },
-        // scale: {
-        //     children: [
-        //         {
-        //             additable: true,
-        //             children: [
-        //                 {
-        //                     id: 'time',
-        //                     element: 'input',
-        //                     type: 'number',
-        //                     defaultValue: 0,
-        //                 },
+                        {
+                            label: 'value',
+                            element: 'input',
+                            type: 'number',
+                            defaultValue: 1,
+                        },
+                    ],
+                },
+                {
+                    label: 'minMult',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 1,
+                    min: 0,
+                    max: 1,
+                },
+            ],
+        },
+        scale: {
+            children: [
+                {
+                    additable: true,
+                    children: [
+                        {
+                            label: 'time',
+                            element: 'input',
+                            type: 'number',
+                            defaultValue: 0,
+                        },
 
-        //                 {
-        //                     id: 'value',
-        //                     element: 'input',
-        //                     type: 'number',
-        //                     defaultValue: 0.25,
-        //                 },
-        //             ],
-        //         },
-        //         {
-        //             id: 'minMult',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0.5,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //     ],
-        //     // isStepped: true if list.length > 1
-        // },
+                        {
+                            label: 'value',
+                            element: 'input',
+                            type: 'number',
+                            defaultValue: 0.25,
+                        },
+                    ],
+                },
+                {
+                    дфиуд: 'minMult',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0.5,
+                    min: 0,
+                    max: 1,
+                },
+            ],
+            // isStepped: true if list.length > 1
+        },
 
-        // rotation: {
-        //     children: [
-        //         {
-        //             label: 'accel',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //         {
-        //             label: 'minSpeed',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //         {
-        //             label: 'maxSpeed',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //         {
-        //             label: 'minStart',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //         {
-        //             label: 'maxStart',
-        //             element: 'input',
-        //             type: 'number',
-        //             defaultValue: 0,
-        //             min: 0,
-        //             max: 1,
-        //         },
-        //     ],
-        // },
+        rotation: {
+            children: [
+                {
+                    label: 'accel',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0,
+                    min: 0,
+                    max: 1,
+                    step: 0.01,
+                },
+                {
+                    label: 'minSpeed',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0,
+                    min: 0,
+                    max: 1,
+                    step: 0.01,
+                },
+                {
+                    label: 'maxSpeed',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0,
+                    min: 0,
+                    max: 1,
+                    step: 0.01,
+                },
+                {
+                    label: 'minStart',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0,
+                    min: 0,
+                    max: 1,
+                    step: 0.01,
+                },
+                {
+                    label: 'maxStart',
+                    element: 'input',
+                    type: 'number',
+                    defaultValue: 0,
+                    min: 0,
+                    max: 1,
+                    step: 0.01,
+                },
+            ],
+        },
 
         //spawn shape , if nothis delected => spawn Point
     },

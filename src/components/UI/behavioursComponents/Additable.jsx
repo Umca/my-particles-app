@@ -12,8 +12,8 @@ export const Additable = (props) => {
                 })
             }
         </Grid>
-        <Grid item xs={12} justifyContent="center">
-            <Button variant="outlined">+</Button>
+        <Grid item xs={12} container justifyContent="right">
+            <Button variant="outlined">Add</Button>
         </Grid>
     </>
 }

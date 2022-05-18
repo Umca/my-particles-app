@@ -2,7 +2,7 @@ import { TextField } from "@mui/material";
 
 export const NumberInput = (props) => {
     const {defaultValue, id, label, min, max, step} = props.data
-
+    console.log(min, max, step)
     return <TextField
     name="number"
     label={label}
@@ -13,7 +13,7 @@ export const NumberInput = (props) => {
     InputProps={{
       inputProps: {
         type: 'number',
-        min: min || 1, max: max || 99000,
+        min: min || -99000, max: max || 99000,
         step: step || 1
       }
     }}
